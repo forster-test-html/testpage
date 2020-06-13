@@ -15,45 +15,63 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="img/apple-touch-icon-72x72.png"
+      href="../img/apple-touch-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="img/apple-touch-icon-114x114.png"
+      href="../img/apple-touch-icon-114x114.png"
     />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="fonts/font-awesome/css/font-awesome.css"
+      href="../fonts/font-awesome/css/font-awesome.css"
+    />
+
+    <!-- Cookie Constent Styles-->
+    <link
+      href="../css/cookies-eu-banner.default.css"
+      rel="stylesheet"
+      media="screen"
     />
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="../css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="../css/owl.theme.css" rel="stylesheet" media="screen" />
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/nivo-lightbox/nivo-lightbox.css"
+      href="../css/nivo-lightbox/nivo-lightbox.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/nivo-lightbox/default.css"
+      href="../css/nivo-lightbox/default.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
@@ -99,9 +117,6 @@
             <li><a href="#about" class="page-scroll">Über uns</a></li>
             <li><a href="#services" class="page-scroll">Leistungen</a></li>
             <li><a href="#portfolio" class="page-scroll">Referenzen</a></li>
-            <li>
-              <a href="#testimonials" class="page-scroll">Testimonials</a>
-            </li>
             <li><a href="#contact" class="page-scroll">Kontakt</a></li>
           </ul>
         </div>
@@ -129,501 +144,52 @@
         </div>
       </div>
     </header>
+    <!-- Cookie Consent Section -->
+    <div id="cookies-eu-banner" style="display: none;">
+      Diese Website verwendet Cookies von Google Analytics, um eine bessere
+      Websitenutzung zu ermöglichen.
+      <a
+        href="./pages/datenschutz.html"
+        class="btn btn-xs"
+        role="button"
+        id="cookies-eu-more"
+        >Mehr Infos</a
+      >
+      <button type="button" class="btn btn-xs" id="cookies-eu-reject">
+        Ohne Cookies fortfahren
+      </button>
+      <button type="button" class="btn btn-xs" id="cookies-eu-accept">
+        Zustimmen
+      </button>
+    </div>
     <!-- About Section -->
     <div id="about">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="about-text">
-              <h2>Herzlich Willkommen</h2>
-              <hr />
-              <p>
-                bei Ihrem Experten f&uuml;r Garten- und Landschaftsbau.
-              </p>
-              <p>
-                Wir stehen Ihnen mit Rat und Tat bei allen Fragen rund um die
-                Gartengestaltung zur Seite. Liefern Ideen f&uuml;r Ihre
-                Au&szlig;enanlage und &uuml;bernehmen die Ausf&uuml;hrung und
-                Pflege.
-              </p>
-              Ob es sich dabei um Ihren privaten Traumgarten, &ouml;ffentliche
-              Au&szlig;enanlagen oder die Gestaltung von Gewerbefl&auml;chen
-              handelt, spielt dabei keine Rolle.
-              <p>
-                Wir bieten Ihnen eine kostenlose Vorbesprechung und
-                professionelle Ausf&uuml;hrung vom Fachmann zu fairen
-                Preisen.<br /><br />
-                Sprechen Sie uns an, wir beraten Sie gerne!<br />
-              </p>
-              <a href="#services" class="btn btn-custom btn-lg page-scroll"
-                >Unsere Leistungen</a
-              >
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div class="about-media">
-              <img
-                src="img/inhaber-t-forster.jpg"
-                alt="Inhaber Thomas Forster"
-              />
-            </div>
-            <div class="about-desc">
-              <h3>Garden Care</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis.
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-3">
-            <div class="about-media"><img src="img/about-2.jpg" alt=" " /></div>
-            <div class="about-desc">
-              <h3>Lawn Care</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Services Section -->
-    <div id="services">
-      <div class="container">
-        <div class="col-md-10 col-md-offset-1 section-title text-center">
-          <h2>Unsere Leistungen</h2>
+        <div class="section-title text-center">
+          <h2>Impressum</h2>
           <hr />
           <p>
-            Das Leistungsspektrum im Garten- und Landschaftbau ist sowohl
-            umfangreich als auch breit gefächert.
+            Verantwortlich für den Inhalt:
           </p>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Außenanlagen</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Neu- und Umgestaltung von Gärten</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Pflasterarbeiten</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Holzterassen - Sichtschutzfelder</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Gabionen - Stützwände - Trockenmauern</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Beregnungsanlagen</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Pflanzungen - Rollrasen - Robotermäher</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Lawn Care</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-          <div
-            class="col-md-4 wow fadeInUp animated"
-            style="visibility: visible; animation-name: fadeInUp;"
-          >
-            <div class="service-media">
-              <img src="img/services/service-1.jpg" alt=" " />
-            </div>
-            <div class="service-desc">
-              <h3>Gartenteiche - Bachläufe - Wasserspiele</h3>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Gallery Section -->
-    <div id="portfolio">
-      <div class="container">
-        <div class="section-title text-center center">
-          <h2>Referenzen</h2>
-          <hr />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Forster & Partner GmbH<br />
+            Thomas Forster<br />
+            Garten- und Landschaftsbau<br />
+            Bahnhofstr. 19<br />
+            55576 Welgesheim<br />
           </p>
-        </div>
-        <div class="categories">
-          <ul class="cat">
-            <li>
-              <ol class="type">
-                <li><a href="#" data-filter="*" class="active">All</a></li>
-                <li><a href="#" data-filter=".lawn">Lawn Care</a></li>
-                <li><a href="#" data-filter=".garden">Garden Care</a></li>
-                <li><a href="#" data-filter=".planting">Planting</a></li>
-              </ol>
-            </li>
-          </ul>
-          <div class="clearfix"></div>
-        </div>
-        <div class="row">
-          <div class="portfolio-items">
-            <div class="col-sm-6 col-md-4 lawn">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/01-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/01-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 planting">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/02-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/02-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 lawn">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/03-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/03-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 lawn">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/04-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/04-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 planting">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/05-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/05-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 garden">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/06-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/06-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 garden">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/07-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Dolor Sit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/07-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 lawn">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/08-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Lorem Ipsum</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/08-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 planting">
-              <div class="portfolio-item">
-                <div class="hover-bg">
-                  <a
-                    href="img/portfolio/09-large.jpg"
-                    title="Project Title"
-                    data-lightbox-gallery="gallery1"
-                  >
-                    <div class="hover-text">
-                      <h4>Adipiscing Elit</h4>
-                    </div>
-                    <img
-                      src="img/portfolio/09-small.jpg"
-                      class="img-responsive"
-                      alt="Project Title"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <p>
+            FON: 06701 2522 <br />
+            FAX: 06701 8147 <br />
+            Steuer-Nr.: 08 650 16 810 <br />
+            Handelsregister-Nr. 224 66<br />
+            Amtsgericht Bingen
+          </p>
+          <h4>Geschäftsführer</h4>
+          <p>Thomas Forster</p>
         </div>
       </div>
     </div>
-    <!-- Testimonials Section -->
-    <!-- <div id="testimonials" class="text-center">
-      <div class="overlay">
-        <div class="container">
-          <div class="section-title">
-            <h2>Testimonials</h2>
-            <hr />
-          </div>
-          <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <div id="testimonial" class="owl-carousel owl-theme">
-                <div class="item">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapibus leo nec
-                    ornare diam."
-                  </p>
-                  <p>- John DOE, Parker County, TX</p>
-                </div>
-                <div class="item">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapibus leo nec
-                    ornare diam."
-                  </p>
-                  <p>- Jenny DOE, Parker County, TX</p>
-                </div>
-                <div class="item">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapibus leo nec
-                    ornare diam."
-                  </p>
-                  <p>- John DOE, Parker County, TX</p>
-                </div>
-                <div class="item">
-                  <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapibus leo nec
-                    ornare diam."
-                  </p>
-                  <p>- John DOE, Parker County, TX</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <!-- Contact Section -->
     <div id="contact" class="text-center">
       <div class="container">
@@ -638,6 +204,15 @@
         </div>
         <div class="col-md-10 col-md-offset-1 contact-info">
           <div class="col-md-4">
+            <h3>So erreichen Sie uns</h3>
+            <hr />
+            <div class="contact-item">
+              <p>Fon: 06701 2522</p>
+              <p>Fax: 06701 8147</p>
+              <p>E-Mail: info@galabau-forster-partner.de</p>
+            </div>
+          </div>
+          <div class="col-md-4">
             <h3>Adresse</h3>
             <hr />
             <div class="contact-item">
@@ -647,18 +222,26 @@
               <p>55576 Welgesheim (Rheinhessen)</p>
             </div>
           </div>
-          <div class="col-md-4">
+          <!--  <div class="col-md-6">
             <h3>Verbandsmitglied</h3>
             <hr />
-            <img src="img/galabau-verbands-logo.png" class="img-responsive" />
-          </div>
+            <img src="../img/galabau-verbands-logo.png" class="img-responsive" />
+          </div> -->
+
           <div class="col-md-4">
-            <h3>So erreichen Sie uns</h3>
+            <h3>Anfahrt</h3>
             <hr />
-            <div class="contact-item">
-              <p>Fon: 06701 2522</p>
-              <p>Fax: 06701 8147</p>
-              <p>E-Mail: info@galabau-forster-partner.de</p>
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.00896940424!2d7.955934815896217!3d49.879858136193896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdf18f2e5af079%3A0xb41049d3f542aaa5!2sForster%20u.%20Partner%20GmbH%20-%20Garten-%20und%20Landschaftsbau!5e0!3m2!1sde!2sde!4v1591984002830!5m2!1sde!2sde"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -715,7 +298,7 @@
             </div>
             <div id="success"></div>
             <button type="submit" class="btn btn-custom btn-lg">
-              Send Message
+              Absenden
             </button>
           </form>
         </div>
@@ -738,23 +321,58 @@
             &copy; 2020 Forster &amp; Partner GmbH
           </p>
           <p>
-            Ihr GaLa-Bau-Partner in Rheinhessen
+            Ihr GaLa-Bau-Partner in Rheinhessen und Nahe
           </p>
           <p>
-            <a href="/pages/impressum.html">Impressum</a>&nbsp|
-            <a href="/pages/datenschutz.html">Datenschutz</a>
+            <a href="#">Impressum</a>&nbsp|
+            <a href="datenschutz.html">Datenschutz</a>
           </p>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="../js/cookies-eu-banner.min.js"></script>
+    <script>
+      new CookiesEuBanner(function () {
+        (function (i, s, o, g, r, a, m) {
+          i["GoogleAnalyticsObject"] = r;
+          (i[r] =
+            i[r] ||
+            function () {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(
+          window,
+          document,
+          "script",
+          "//www.google-analytics.com/analytics.js",
+          "ga"
+        );
+
+        ga("create", "UA-54391652-1", "auto");
+        ga("set", "anonymizeIp", true);
+        ga("send", "pageview");
+      });
+    </script>
+    <script type="text/javascript" src="../js/jquery.1.11.1.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="../js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="../js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="../js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="../js/owl.carousel.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/jqBootstrapValidation.js"
+    ></script>
+    <script type="text/javascript" src="../js/contact_me.js"></script>
+    <script type="text/javascript" src="../
   </body>
 </html>

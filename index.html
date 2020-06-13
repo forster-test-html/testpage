@@ -16,6 +16,8 @@
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <link
       rel="apple-touch-icon"
@@ -29,12 +31,26 @@
     />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <link
       rel="stylesheet"
       type="text/css"
       href="fonts/font-awesome/css/font-awesome.css"
+    />
+
+    <!-- Cookie Constent Styles-->
+    <link
+      href="css/cookies-eu-banner.default.css"
+      rel="stylesheet"
+      media="screen"
     />
 
     <!-- Slider
@@ -80,7 +96,7 @@
             data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1"
           >
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Menü</span>
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
@@ -126,15 +142,34 @@
         </div>
       </div>
     </header>
+    <!-- Cookie Consent Section -->
+    <div id="cookies-eu-banner" style="display: none;">
+      Diese Website verwendet Cookies von Google Analytics, um eine bessere
+      Websitenutzung zu ermöglichen.
+      <a
+        href="./pages/datenschutz.html"
+        class="btn btn-xs"
+        role="button"
+        id="cookies-eu-more"
+        >Mehr Infos</a
+      >
+      <button type="button" class="btn btn-xs" id="cookies-eu-reject">
+        Ohne Cookies fortfahren
+      </button>
+      <button type="button" class="btn btn-xs" id="cookies-eu-accept">
+        Zustimmen
+      </button>
+    </div>
     <!-- About Section -->
     <div id="about">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6">
+          <div class="col-xs-12 col-md-6 padding">
             <div class="about-text">
               <h2>Herzlich Willkommen</h2>
               <hr />
               <p>
+                <br />
                 bei Ihrem Experten f&uuml;r Garten- und Landschaftsbau.
               </p>
               <p>
@@ -160,30 +195,35 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6">
-            <div class="media">
-              <img
-                src="img/inhaber-t-forster.jpg"
-                class="align-self-center mr-3"
-                alt="..."
-              />
-              <div class="media-body">
-                <h5 class="mt-0">Beständig gut</h5>
-                <p>
-                  Die Firma Forster und Partner GmbH besteht seit dem
-                  01.01.1993. Geschäftsführer ist Thomas Forster.
-                </p>
-                <p>
-                  Unser Firmensitz befindet sich in Welgesheim.
-                </p>
-                <p>
-                  Wir sind für unsere Kunden ein kompetenter, zuverlässiger und
-                  innovativer Partner und legen sehr viel Wert auf eine
-                  persönliche Kundenbetreuung, in der auch alle Fragen und
-                  Probleme rund um den Garten jederzeit beantwortet werden.
-                </p>
-                <p class="mb-0">
-                  Wir freuen uns auf Sie!
-                </p>
+            <div class="about-text">
+              <h2>Über uns</h2>
+              <hr />
+              <div class="media">
+                <div class="media-body">
+                  <p>
+                    Die Firma Forster und Partner GmbH besteht seit dem
+                    01.01.1993. Geschäftsführer ist Thomas Forster.
+                  </p>
+                  <p>
+                    Unser Firmensitz befindet sich in Welgesheim.
+                  </p>
+                  <p>
+                    Wir sind für unsere Kunden ein kompetenter, zuverlässiger
+                    und innovativer Partner und legen sehr viel Wert auf eine
+                    persönliche Kundenbetreuung, in der auch alle Fragen und
+                    Probleme rund um den Garten jederzeit beantwortet werden.
+                  </p>
+                  <p>
+                    Wir freuen uns auf Sie!
+                  </p>
+                </div>
+                <div class="media-right media-middle">
+                  <img
+                    src="img/inhaber-t-forster.jpg"
+                    class="align-self-center mr-3"
+                    alt="Inhaber Thomas Forster"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -233,8 +273,8 @@
           <h2>Unsere Leistungen</h2>
           <hr />
           <p>
-            Das Leistungsspektrum im Garten- und Landschaftbau ist sowohl
-            umfangreich als auch breit gefächert.
+            Unser Leistungsspektrum im Garten- und Landschaftbau - Wir sind Ihr
+            kompetenter Partner
           </p>
         </div>
         <div class="row">
@@ -266,12 +306,14 @@
               <img src="img/services/neugestaltung-garten_low.jpg" alt=" " />
             </div>
             <div class="service-desc">
-              <h3>Neu- und Umgestaltung von Gärten</h3>
+              <h3>Gartengestaltung</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Ob Terassen, Pflaster oder Pflanzungen. Auch Sichtschutz und
+                Bodenbeläge, Natur- und Schwimmteiche, sowie Mauern und
+                Bewässerungssysteme gehören zu unseren Leistungen. Als
+                erfahrenes Unternehmen freuen wir uns, Ihre Gartenwünsche zu
+                erfüllen.
               </p>
             </div>
           </div>
@@ -286,9 +328,10 @@
               <h3>Pflasterarbeiten</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Hochwertige Beläge aus Naturstein oder Beton prägen Ihren Garten
+                oder Ihre Einfahrt. Großformatige Platten vermitteln Weite -
+                kleine Formate geben Struktur. Wir finden gemeinsame mit Ihnen
+                den richtigen Belag.
               </p>
             </div>
           </div>
@@ -302,12 +345,11 @@
               <img src="img/services/holzterasse.jpg" alt=" " />
             </div>
             <div class="service-desc">
-              <h3>Holzterassen - Natursteinterassen</h3>
+              <h3>Terassen</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Exklusive Terassen aus Echtholz, Naturstein oder WPC-Dielen. Wir
+                gestalten Ihre neue Terasse als Eingang zum Garten.
               </p>
             </div>
           </div>
@@ -322,9 +364,10 @@
               <h3>Gabionen - Stützwände - Trockenmauern</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Gabionen, auch Steinkorb, oder Schüttkorb genannt, fügen sich
+                optisch perfekt in moderne Gärten ein. Füllungen der Gabionen
+                aus Natursteinen speichern Wärme und bieten einen schönen
+                Kontrast zum Grün des Gartens.
               </p>
             </div>
           </div>
@@ -339,9 +382,10 @@
               <h3>Rollrasen - Robotermäher - Beregnungsanlagen</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Qualitativ hochwertiger Rollrasen, automatische
+                Bewässerungssysteme und zuverlässige Robotermäher sparen nicht
+                nur Zeit und Wasser, sondern garantieren ein tolles
+                Erscheinungsbild Ihres Gartens.
               </p>
             </div>
           </div>
@@ -372,12 +416,11 @@
               <img src="img/services/zaun_thumb.jpg" alt=" " />
             </div>
             <div class="service-desc">
-              <h3>Zäune - Sichtschutzfelder</h3>
+              <h3>Sichtschutz & Zäune</h3>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                sed dapibus leo nec ornare diam sedasd commodo nibh ante
-                facilisis bibendum dolor feugiat at.
+                Dekorative Sichtschutzfelder aus Glas liegen ebenso im Trend wie
+                Zäune aus edlen Hölzern oder WPC. Setzen Sie Akzente.
               </p>
             </div>
           </div>
@@ -606,6 +649,186 @@
                 </div>
               </div>
             </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/10-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/10-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/11-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/11-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/12-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/12-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/13-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/13-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/14-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/14-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/15-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/15-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/16-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/16-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/17-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/17-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 planting">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/portfolio/18-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Adipiscing Elit</h4>
+                    </div>
+                    <img
+                      src="img/portfolio/18-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -797,14 +1020,46 @@
             Ihr GaLa-Bau-Partner in Rheinhessen und Nahe
           </p>
           <p>
-            <a href="/pages/impressum.html">Impressum</a>&nbsp|
-            <a href="/pages/datenschutz.html">Datenschutz</a>
+            <a href="pages/impressum.html">Impressum</a>&nbsp|
+            <a href="pages/datenschutz.html">Datenschutz</a>
           </p>
         </div>
       </div>
     </div>
+    <script src="js/cookies-eu-banner.min.js"></script>
+    <script>
+      new CookiesEuBanner(function () {
+        (function (i, s, o, g, r, a, m) {
+          i["GoogleAnalyticsObject"] = r;
+          (i[r] =
+            i[r] ||
+            function () {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(
+          window,
+          document,
+          "script",
+          "//www.google-analytics.com/analytics.js",
+          "ga"
+        );
+
+        ga("create", "UA-54391652-1", "auto");
+        ga("set", "anonymizeIp", true);
+        ga("send", "pageview");
+      });
+    </script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
