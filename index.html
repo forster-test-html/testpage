@@ -13,13 +13,6 @@
     </title>
     <meta name="author" content="Jan Forster" />
 
-    <!-- Prefetching-->
-    <link rel="preconnect" href="https://www.google-analytics.com" />
-
-    <link rel="preconnect" href="https://maps.gstatic.com" />
-
-    <link rel="preconnect" href="https://maps.googleapis.com" />
-
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -47,11 +40,12 @@
       crossorigin="anonymous"
     />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome/css/font-awesome.css"
-    />
+    <!-- Prefetching-->
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <link rel="preconnect" href="https://maps.gstatic.com" />
+
+    <link rel="preconnect" href="https://maps.googleapis.com" />
 
     <!-- Cookie Constent Styles-->
     <link
@@ -79,7 +73,7 @@
       href="css/nivo-lightbox/default.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
       rel="stylesheet"
     />
 
@@ -532,7 +526,7 @@
             Lassen Sie sich von unseren vergangenen Projekten inspirieren.
           </p>
         </div>
-        <div class="categories">
+        <!--<div class="categories">
           <ul class="cat">
             <li>
               <ol class="type">
@@ -544,7 +538,7 @@
             </li>
           </ul>
           <div class="clearfix"></div>
-        </div>
+        </div>-->
         <div class="row">
           <div class="portfolio-items">
             <div class="col-sm-6 col-md-4 lawn">
@@ -1212,7 +1206,10 @@
             <ul>
               <li>
                 <a href="https://g.page/galabau_forster_partner?we"
-                  ><i class="fa fa-google"></i
+                  ><span
+                    class="glyphicon glyphicon-camera"
+                    aria-hidden="true"
+                  ></span
                 ></a>
               </li>
             </ul>
@@ -1258,7 +1255,13 @@
         ga("send", "pageview");
       });
     </script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.1.11.1.js"></script>-->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -1266,7 +1269,7 @@
     ></script>
     <script type="text/javascript" src="js/SmoothScroll.js"></script>
     <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.isotope.js"></script>-->
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
     <script type="text/javascript" src="js/contact_me.js"></script>
