@@ -49,28 +49,28 @@
 
     <!-- Cookie Constent Styles-->
     <link
-      href="css/cookies-eu-banner.default.css"
+      href="css/cookies-eu-banner.default.min.css"
       rel="stylesheet"
       media="screen"
     />
 
     <!-- Slider
     ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.min.css" rel="stylesheet" media="screen" />
 
     <!-- Stylesheet
     ================================================== -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/nivo-lightbox/nivo-lightbox.css"
+      href="css/nivo-lightbox/nivo-lightbox.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/nivo-lightbox/default.css"
+      href="css/nivo-lightbox/default.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
@@ -112,7 +112,7 @@
           id="bs-example-navbar-collapse-1"
           role="navigation"
         >
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right smooth-scroll">
             <li><a href="#about" class="page-scroll">Über uns</a></li>
             <li><a href="#services" class="page-scroll">Leistungen</a></li>
             <li><a href="#portfolio" class="page-scroll">Referenzen</a></li>
@@ -216,8 +216,21 @@
                       Probleme rund um den Garten jederzeit beantwortet werden.
                     </p>
                     <p>
-                      Wir freuen uns auf Sie!
+                      Wir sind Mitglied im Galabau Landesverband Rheinland-Pfalz
+                      und Saarland.
                     </p>
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="img/galabau-verbands-logo.webp" />
+                      <source
+                        type="image/png"
+                        srcset="img/galabau-verbands-logo.png" />
+                      <img
+                        src="img/galabau-verbands-logo.png"
+                        class="img-responsive"
+                        alt="Wir sind Mitglied im Galabau Landesverband Rheinland-Pfalz und Saarland"
+                    /></picture>
                   </div>
                   <div class="media-right media-middle">
                     <picture>
@@ -231,7 +244,7 @@
                       />
                       <img
                         src="img/inhaber-t-forster.jpg"
-                        class="align-self-center mr-3"
+                        class="align-self-center mr-3 img-responsive"
                         alt="Inhaber Thomas Forster"
                       />
                     </picture>
@@ -1188,12 +1201,12 @@
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label class="hidden" for="telefon">Telefon:</label>
+                    <label class="hidden" for="ort">Ort:</label>
                     <input
                       type="text"
-                      id="telefon"
+                      id="ort"
                       class="form-control"
-                      placeholder="Telefon"
+                      placeholder="Ort"
                     />
 
                     <p class="help-block text-danger"></p>
@@ -1230,12 +1243,8 @@
             <div class="social">
               <ul>
                 <li>
-                  <a href="https://g.page/galabau_forster_partner?we"
-                    ><span class="glyphicon glyphicon-camera" aria-hidden="true"
-                      ><p class="hidden">
-                        Forster und Partner auf Google My Business
-                      </p></span
-                    ></a
+                  <a href="https://g.page/galabau_forster_partner?we">
+                    Forster und Partner auf Google My Business</a
                   >
                 </li>
               </ul>
@@ -1247,8 +1256,8 @@
               Ihr GaLa-Bau-Partner in Rheinhessen und Nahe
             </p>
             <p>
-              <a href="pages/impressum.html">Impressum</a>&nbsp|
-              <a href="pages/datenschutz.html">Datenschutz</a>
+              <a href="./impressum.html">Impressum</a>&nbsp|
+              <a href="./datenschutz.html">Datenschutz</a>
             </p>
           </div>
         </div>
@@ -1288,18 +1297,19 @@
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
       crossorigin="anonymous"
     ></script>
-
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
       integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-    <!--<script type="text/javascript" src="js/jquery.isotope.js"></script>-->
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/jqBootstrapValidation.min.js"
+    ></script>
+    <script type="text/javascript" src="js/contact_me.min.js"></script>
+    <script type="text/javascript" src="js/main.min.js"></script>
   </body>
 </html>

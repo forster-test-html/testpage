@@ -45,6 +45,7 @@ ul,
 ol {
   list-style: none;
 }
+
 .clearfix:after {
   visibility: hidden;
   display: block;
