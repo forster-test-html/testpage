@@ -9,10 +9,10 @@ if(empty($_POST['name'])  		||
 	return false;
    }
 	
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-$ort = $_POST['ort'];
+$name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+$email_address = htmlspecialchars(stripslashes(trim($_POST['email'])));
+$message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+$ort = htmlspecialchars(stripslashes(trim($_POST['ort'])));
 	
 // Create the email and send the message
 $to = 'info@galabau-forster-partner.de'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
