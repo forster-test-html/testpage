@@ -1,16 +1,49 @@
 <?php
+
+function honeypot_validate ($req) {
+           
+   if (!empty($req)) {
+
+       $honeypot_fields = [
+           "name",
+           "email"
+       ];
+
+       foreach ($honeypot_fields as $field) {
+           if (isset($req[$field]) && !empty($req[$field])) {
+               return false;
+           }
+       }
+   }
+
+   return true;
+}
+
+//check spm
+if (honeypot_validate($_POST)) {
+   // The honeypot fields are clean, go on
+   $is_spammer = false;
+} else {
+   // A spammer filled a honeypot field
+   $is_spammer = true;
+}
+
+if ($is_spammer) {
+   return false;
+}
+
 // Check for empty fields
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
+if(empty($_POST['na_me'])  		||
+   empty($_POST['em_ail']) 		||
    empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+   !filter_var($_POST['em_ail'],FILTER_VALIDATE_EMAIL))
    {
 	echo "No arguments Provided!";
 	return false;
    }
 	
-$name = htmlspecialchars(stripslashes(trim($_POST['name'])));
-$email_address = htmlspecialchars(stripslashes(trim($_POST['email'])));
+$name = htmlspecialchars(stripslashes(trim($_POST['na_me'])));
+$email_address = htmlspecialchars(stripslashes(trim($_POST['em_ail'])));
 $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
 $ort = htmlspecialchars(stripslashes(trim($_POST['ort'])));
 	
